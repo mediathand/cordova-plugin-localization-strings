@@ -1,17 +1,21 @@
 {
-  "name": "cordova-plugin-localization-strings",
+  "name": "@mediathand/cordova-plugin-localization-strings",
   "version": "2.0.0",
   "description": "Cordova Plugin for handling localization strings on InfoPlist.strings and Localizable.strings on iOS, strings.xml on Android",
+  "scripts": {
+    "version": "cordova-version-sync"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kelvinhokk/cordova-plugin-localization-strings.git"
+    "url": "https://github.com/mediathand/cordova-plugin-localization-strings.git"
   },
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=6.0.0"
-    }
-  ],
+  "cordova": {
+    "id": "cordova-plugin-localization-strings",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
@@ -32,10 +36,12 @@
     "xml-writer": "^1.6.0",
     "xml2js": "^0.4.17"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@mediathand/cordova-version-sync": "^1.0.1"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kelvinhokk/cordova-plugin-localization-strings.git/issues"
+    "url": "https://github.com/mediathand/cordova-plugin-localization-strings.git/issues"
   },
-  "homepage": "https://github.com/kelvinhokk/cordova-plugin-localization-strings.git"
+  "homepage": "https://github.com/mediathand/cordova-plugin-localization-strings.git"
 }
